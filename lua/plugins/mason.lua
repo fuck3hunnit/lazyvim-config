@@ -8,10 +8,6 @@ return {
         -- formatters
         "prettier",
         "prettierd",
-        -- code spell
-        "codespell",
-        "misspell",
-        "cspell",
         -- markdown
         "markdownlint",
         -- rustywind for tailwindcss

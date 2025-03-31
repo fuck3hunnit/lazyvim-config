@@ -21,7 +21,6 @@ return {
         -- e.g: brew install golangci-lint
         go = { "golangcilint" },
         python = { "ruff" },
-        ["*"] = { "cspell", "codespell" },
         javascript = { "oxlint" },
         typescript = { "oxlint" },
         javascriptreact = { "oxlint" },
