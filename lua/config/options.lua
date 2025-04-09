@@ -18,6 +18,9 @@ vim.g.loaded_node_provider = 0
 -- Disable autoformat on save for LazyVim
 vim.g.autoformat = false
 
+-- Disable spell check
+vim.opt.spell = false
+
 -- Setup options for Neovide
 -- Install neovide: ❯ brew install --ignore-dependencies  neovide
 if vim.g.neovide then
