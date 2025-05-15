@@ -22,7 +22,6 @@ return {
             "gitsigns.nvim",
             "telescope.nvim",
           },
-          disabled = { "gitsigns" },
         },
         include_only_installed_plugins = true,
         telescope_mappings = {
