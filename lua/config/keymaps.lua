@@ -163,14 +163,6 @@ keymap("v", "<A-Up>", ":m '<-2<CR>gv=gv", opts)
 -- Show Lsp info
 keymap("n", "<leader>cl", "<cmd>LspInfo<CR>", opts)
 
--- Gitsigns
--- Add toggle gitsigns blame line
-if Util.has("gitsigns.nvim") then
-  keymap("n", "<leader>ub", "<cmd>lua require('gitsigns').toggle_current_line_blame()<CR>", {
-    desc = "Toggle current line blame",
-  })
-end
-
 -- Blame line
 keymap("n", "<leader>gl", function()
   local Snacks = require("snacks")

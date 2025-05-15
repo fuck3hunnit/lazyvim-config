@@ -22,7 +22,7 @@ return {
           laststatus = 0, -- turn off the statusline in zen mode
         },
         -- NOTE: Those options are disables by default, change to enabled = true to enable
-        gitsigns = { enabled = false }, -- disables git signs
+        gitsigns = { enabled = true }, -- disables git signs
         tmux = { enabled = false }, -- disables the tmux statusline
         -- NOTE: Need to add to wezterm config https://github.com/folke/zen-mode.nvim#wezterm
         wezterm = {
