@@ -2,58 +2,47 @@ return {
   {
     "nvim-treesitter/nvim-treesitter",
     dependencies = {
-      "windwp/nvim-ts-autotag",
+      "windwp/nvim-ts-autotag", -- автозакрытие тегов в HTML/JSX
+      "JoosepAlviste/nvim-ts-context-commentstring", -- умное комментирование
     },
+    build = ":TSUpdate",
     opts = {
       ensure_installed = {
-        "bash",
-        "regex",
-        "vim",
-        "lua",
-        "html",
-        "markdown",
-        "markdown_inline",
-        "css",
+        "javascript",
         "typescript",
         "tsx",
-        "javascript",
-        "hurl",
+        "html",
+        "css",
         "json",
-        "json5",
         "jsonc",
-        "graphql",
-        "prisma",
-        "rust",
-        "go",
-        "toml",
-        "c",
-        "proto",
-        "svelte",
+        "lua",
+        "vim",
+        "markdown",
+        "markdown_inline",
         "astro",
-        "embedded_template",
+        "svelte",
+        "vue",
+        "graphql",
       },
       auto_install = true,
-      -- ensure_installed = "all", -- one of "all" or a list of languages
-      ignore_install = { "" }, -- List of parsers to ignore installing
-      sync_install = false, -- install languages synchronously (only applied to `ensure_installed`)
 
       highlight = {
-        enable = true, -- false will disable the whole extension
-        disable = { "css" }, -- list of language that will be disabled
+        enable = true,
+        additional_vim_regex_highlighting = false,
       },
-      autopairs = {
+
+      indent = {
+        enable = true,
+        disable = { "css" }, -- можно оставить, если глючит
+      },
+
+      autotag = {
         enable = true,
       },
-      indent = { enable = true, disable = { "python", "css" } },
 
       context_commentstring = {
         enable = true,
         enable_autocmd = false,
-      },
-
-      -- auto tag
-      autotag = {
-        enable = true,
       },
     },
   },
