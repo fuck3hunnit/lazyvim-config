@@ -54,16 +54,6 @@ return {
           end,
         },
       },
-      format_on_save = function(bufnr)
-        local ft = vim.bo[bufnr].filetype
-        return vim.tbl_contains({
-          "javascript",
-          "typescript",
-          "javascriptreact",
-          "typescriptreact",
-          "svelte",
-        }, ft)
-      end,
     },
   },
 }
