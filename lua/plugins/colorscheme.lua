@@ -2,19 +2,29 @@ return {
   {
     "catppuccin/nvim",
     name = "catppuccin",
-    lazy = false, -- загружается сразу
-    priority = 1000, -- до всех остальных
+    lazy = false,
+    priority = 1000,
     config = function()
       require("catppuccin").setup({
-        flavour = "mocha", -- "latte", "frappe", "macchiato", "mocha"
+        flavour = "mocha",
         transparent_background = true,
+        float = {
+          enabled = true,
+          transparent = true, -- enable transparent floating windows
+          solid = false,
+          winblend = 10,
+          border = "rounded",
+        },
         integrations = {
           cmp = true,
           gitsigns = true,
           treesitter = true,
           telescope = true,
           notify = true,
-          mini = true,
+          mini = {
+            enabled = true,
+            indentscope_color = "",
+          },
         },
       })
       vim.cmd.colorscheme("catppuccin")
