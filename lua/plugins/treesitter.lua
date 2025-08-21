@@ -8,6 +8,7 @@ return {
     build = ":TSUpdate",
     opts = {
       ensure_installed = {
+        "go",
         "javascript",
         "typescript",
         "tsx",

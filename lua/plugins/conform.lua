@@ -13,6 +13,7 @@ return {
     optional = true,
     opts = {
       formatters_by_ft = {
+        go = { "goimports", "gofumpt" },
         javascript = { "eslint_d", "prettierd", "prettier", "biome", "dprint", "deno_fmt" },
         typescript = { "eslint_d", "prettierd", "prettier", "biome", "dprint", "deno_fmt" },
         javascriptreact = { "eslint_d", "prettierd", "prettier", "biome", "dprint", "deno_fmt" },

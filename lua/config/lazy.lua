@@ -24,6 +24,7 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.util.mini-hipatterns" },
     { import = "lazyvim.plugins.extras.lang.yaml" },
     { import = "lazyvim.plugins.extras.linting.eslint" },
+    { import = "lazyvim.plugins.extras.lang.go" },
     -- { import = "plugins.extras.vtsls" }, -- Typescript Server alternative
     -- { import = "plugins.extras.typescript-tools" }, -- Typescript Server alternative
     { import = "lazyvim.plugins.extras.lang.typescript" },
