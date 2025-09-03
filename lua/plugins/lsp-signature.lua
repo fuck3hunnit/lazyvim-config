@@ -5,7 +5,7 @@ return {
     opts = {
       bind = true,
       hint_enable = true,
-      hint_prefix = "🐾 ",
+      hint_prefix = " ",
       floating_window = false, -- ❌ отключаем всплывающее окно
       handler_opts = {
         border = "none",
