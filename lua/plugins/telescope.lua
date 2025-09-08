@@ -42,11 +42,6 @@ return {
         "<cmd>Telescope find_files follow=true no_ignore=true hidden=true<CR>",
         desc = "Find All Files (including hidden)",
       },
-      {
-        "<leader>fl",
-        "<cmd>Telescope live_grep<CR>",
-        desc = "Live Grep from project root",
-      },
     },
   },
 }
