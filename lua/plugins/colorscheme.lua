@@ -3,11 +3,6 @@ return {
     "catppuccin/nvim",
     name = "catppuccin",
     lazy = false,
-    optional = true,
-    opts = function()
-      local bufferline = require("catppuccin.groups.integrations.bufferline")
-      bufferline.get = bufferline.get or bufferline.get_theme
-    end,
     priority = 1000,
     config = function()
       require("catppuccin").setup({
